@@ -6,7 +6,7 @@ from typing import List, Optional
 from tavily import TavilyClient  # Import the Tavily client
 
 # Retrieve secret key from environment variable
-TAVILY_API_SECRET_KEY = os.environ.get("TAVILY_API_SECRET_KEY", "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")
+TAVILY_API_SECRET_KEY = os.environ.get("TAVILY_API_SECRET_KEY")
 app = FastAPI(title="Tavily API Search Service")
 
 class SearchRequest(BaseModel):
